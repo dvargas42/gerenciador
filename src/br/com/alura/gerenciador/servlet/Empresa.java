@@ -19,6 +19,11 @@ public class Empresa {
 		this.nome = nome;
 	}
 	
+	public Empresa(String nome, Date data) {
+		this.nome = nome;
+		this.dataAbertura = data;
+	}
+	
 	public Empresa() {
 		
 	}
