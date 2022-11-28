@@ -9,8 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/mostraEmpresa")
-public class MotraEmpresaServlet extends HttpServlet{
+import br.com.alura.gerenciador.modelo.Banco;
+import br.com.alura.gerenciador.modelo.Empresa;
+
+//@WebServlet(urlPatterns = "/mostraEmpresa")
+public class MostraEmpresaServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
 	@Override
