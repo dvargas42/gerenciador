@@ -1,7 +1,6 @@
 package br.com.alura.gerenciador.servlet;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Banco {
@@ -49,11 +48,11 @@ public class Banco {
 		return null;
 	}
 	
-	public void alterarEmpresa(Integer id, String nome, Date dataAbertura) {
+	public void alteraEmpresa(Empresa emp) {
 		for(Empresa empresa: Banco.lista) {
-			if(empresa.getId() == id) {
-				empresa.setNome(nome);
-				empresa.setDataAbertura(dataAbertura);
+			if(empresa.getId() == emp.getId()) {
+				empresa.setNome(emp.getNome());
+				empresa.setDataAbertura(emp.getDataAbertura());
 			}
 		}
 	}
