@@ -40,6 +40,15 @@ public class Banco {
 	
 	}
 	
+	public Empresa buscaEmpresaPelaId(Integer id) {
+		for(Empresa empresa: Banco.lista) {
+			if(empresa.getId() == id) {
+				return empresa;
+			}
+		}
+		return null;
+	}
+	
 	public void alterarEmpresa(Integer id, String nome, Date dataAbertura) {
 		for(Empresa empresa: Banco.lista) {
 			if(empresa.getId() == id) {
